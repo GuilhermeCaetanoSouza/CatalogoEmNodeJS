@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="/static/css/estilo.css">
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <th>ID</th>
+            <th>Titulo</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+        <%for(var i=0;i<lista.length;i++){%>
+        <tr>
+            <td><%=i+1%></td> 
+            <td><%=lista[i].titulo%></td>
+            <td><%=lista[i].descricao%></td>
+            <td><%=lista[i].preco%></td>
+        </tr>
+        <%}%>
+    </table>
+</body>
+</html>
